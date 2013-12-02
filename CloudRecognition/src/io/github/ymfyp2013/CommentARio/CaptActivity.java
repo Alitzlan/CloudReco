@@ -44,6 +44,7 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v4.app.NavUtils;
 import android.util.Base64;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -259,7 +260,7 @@ public class CaptActivity extends Activity implements OnClickListener{
 	
 	private void setHeaders(HttpUriRequest request) {
 		request.setHeader(new BasicHeader("Date", DateUtils.formatDate(new Date()).replaceFirst("[+]00:00$", "")));
-		request.setHeader(new BasicHeader("Content-Type", "application/json"));
+		request.setHeader(new BasicHeader("Content-Type", "application/x-www-form-urlencoded"));
 	}
 	
 	public void showDialog(String title, String message) {
@@ -323,6 +324,7 @@ public class CaptActivity extends Activity implements OnClickListener{
 	    	String responseBody = null;
 			try {
 				responseBody = EntityUtils.toString(response.getEntity());
+				Log.v("response", responseBody);
 			} catch (ParseException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

@@ -68,7 +68,8 @@ import com.qualcomm.QCARSamples.CloudRecognition.utils.DebugLog;
 public class CommentARio extends Activity
 {
     // Defines the Server URL to get the books data
-    private static final String mServerURL = "http://ymfyp2013.github.io/json/";
+    //private static final String mServerURL = "http://ymfyp2013.github.io/json/";
+	String mServerURL = "https://gateway-ymfyp2013.rhcloud.com/json/";
     private static final String mDemoURL = "http://personal.ie.cuhk.edu.hk/~yc011/CommentARio/bullet/?t=";   
 
     // Different screen orientations supported by the CloudReco system.
