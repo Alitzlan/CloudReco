@@ -6,7 +6,7 @@
     <string name="activity_splash_subtitle">The future is here</string>
     <string name="about_title">About</string>
     <string name="about_text">The app searches an image database in the cloud to recognize certain posters and, on successful match, displays information such as comments to them.&lt;br />&lt;br />To use this app:&lt;br />1. Point your device at any poster images&lt;br />&lt;br />2. When the poster is recognized the comments for this poster is displayed&lt;br />&lt;br />This app is based on one of Vuforia Sample Apps, Cloud Recognition&lt;br />&lt;a href="https://developer.vuforia.com/resources/sample-apps/cloud-recognition-sample-app">https://developer.vuforia.com/resources/sample-apps/cloud-recognition-sample-app&lt;a/></string>
-    <string name="button_start">Start</string>
+    <string name="button_start">Post Comment</string>
     <string name="button_OK">OK</string>
     <string name="string_$">$</string>
     <string name="string_openParentheses">(</string>
@@ -43,5 +43,12 @@
     <string name="UPDATE_ERROR_REQUEST_TIMEOUT_DESC">The network request has timed out, please check your internet connection and try again.</string>
     <string name="UPDATE_ERROR_BAD_FRAME_QUALITY_DESC">The camera does not have enough detail, please try again later.</string>
     <string name="UPDATE_ERROR_UNKNOWN_DESC">The service is unavaiable, please try again later.</string>
+    <string name="button_capture">New Target</string>
+    <string name="title_activity_capt">CaptActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="title_hint">Please input the title</string>
 
 </resources>

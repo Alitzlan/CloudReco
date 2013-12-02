@@ -30,7 +30,6 @@ public class AboutScreen extends Activity implements OnClickListener
     private TextView mAboutText;
     private Button mStartButton;
     private Button mCaptureButton;
-    private static final int CAMERA_REQUEST = 1888; 
 
 
     public void onCreate(Bundle savedInstanceState)
@@ -64,8 +63,8 @@ public class AboutScreen extends Activity implements OnClickListener
     /** Starts the Capture activity */
     private void startCaptActivity()
     {
-    	Intent i = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE); 
-        startActivityForResult(i, CAMERA_REQUEST); 
+    	Intent i = new Intent(this, CaptActivity.class);
+    	startActivity(i);
     }
 
 
